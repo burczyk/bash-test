@@ -11,6 +11,11 @@ function replace_and_commit {
   git push origin master
 }
 
+function update_podspec_version {
+  #sed "s/s.version[ \t]*=.*/s.version  = \'1.2.3\'/g" afnetworking.podspec
+  local latest_tag=git describe --tags $(git rev-list --tags --max-count=1)
+}
+
 if [ -d $repository_name ]
 then
   echo $repository_name exists - pulling newest data
