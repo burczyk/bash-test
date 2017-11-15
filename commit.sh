@@ -5,7 +5,6 @@ repository_path=git@github.com:burczyk/$repository_name.git
 
 function replace_and_commit {
   cp commit.sh $repository_name
-  pwd
   cd $repository_name
   git add .
   git commit -m "Updated files"
