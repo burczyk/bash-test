@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#tutorial: https://ryanstutorials.net/bash-scripting-tutorial/bash-functions.php
+
 repository_name=bash-test
 repository_path=git@github.com:burczyk/$repository_name.git
 
